@@ -134,7 +134,7 @@ module tb;
             if (o_valid) begin
                 test_inA  =  inst_idata[j][DATA_W-1          : 0     ];
                 test_inB  =  inst_idata[j][2*DATA_W-1        : DATA_W];
-                test_inst =  inst_idata[i][2*DATA_W+INST_W-1 : 2*DATA_W+INST_W-3];
+                test_inst =  inst_idata[j][2*DATA_W+INST_W-1 : 2*DATA_W+INST_W-3];
                 test_outO =  inst_odata[j][DATA_W];
                 test_outD =  inst_odata[j][DATA_W-1          : 0     ];
                 if (test_outO !== o_overflow) begin
